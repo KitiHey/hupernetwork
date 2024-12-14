@@ -32,32 +32,32 @@ political_decisions = {
 		    prestige = 12
 			badboy = 30
 		    set_global_flag = patria_grande_ideal
-			PRG = {all_core = {add_core = AND}}
-			URU = {all_core = {add_core = AND}}
-			ARG = {all_core = {add_core = AND}}
-			PBC = {all_core = {add_core = AND}}
-			GCO = {all_core = {add_core = AND}}
-			UCA = {all_core = {add_core = AND}}
-			CHL = {all_core = {add_core = AND}}
-			MEX = {all_core = {add_core = AND}}
-			2190 = {remove_core = AND}
-			2131 = {remove_core = AND}
-			2549 = {remove_core = AND}
-			2242 = {remove_core = AND}
-			2532 = {remove_core = AND}
-			2401 = {remove_core = AND}
-			2338 = {remove_core = AND}
-			2337 = {remove_core = AND}
-			2366 = {remove_core = AND}
-			2367 = {remove_core = AND}
-			USA = {all_core = {remove_core = AND}}
-			TEX = {all_core = {remove_core = AND}}
+			PRG = {all_core = {add_core = PAT}} 
+      URU = {all_core = {add_core = PAT}}
+      ARG = {all_core = {add_core = PAT}}
+			PBC = {all_core = {add_core = PAT}}
+			GCO = {all_core = {add_core = PAT}}
+			UCA = {all_core = {add_core = PAT}}
+			CHL = {all_core = {add_core = PAT}}
+			MEX = {all_core = {add_core = PAT}}
+			2190 = {remove_core = PAT}
+			2131 = {remove_core = PAT}
+			2549 = {remove_core = PAT}
+			2242 = {remove_core = PAT}
+			2532 = {remove_core = PAT}
+			2401 = {remove_core = PAT}
+			2338 = {remove_core = PAT}
+			2337 = {remove_core = PAT}
+			2366 = {remove_core = PAT}
+			2367 = {remove_core = PAT}
+			USA = {all_core = {remove_core = PAT}}
+			TEX = {all_core = {remove_core = PAT}}
 		}
 	}
     patria_grande_revenge = {
 	    picture = patria_grande
 	    potential = {
-		    tag = AND
+		    tag = PAT
 		    NOT = {has_global_flag = patria_grande_exansion}
 			set_country_flag = no_more_formables
 		}
@@ -68,19 +68,19 @@ political_decisions = {
 		effect = {
 		    prestige = 40
 		    set_global_flag = patria_grande_exansion
-			MEX = {all_core = {add_core = AND}}
-			2190 = {add_core = AND}
-			2131 = {add_core = AND}
-			2549 = {add_core = AND}
-			2532 = {add_core = AND}
-			2242 = {add_core = AND}
-			2401 = {add_core = AND}
-			2338 = {add_core = AND}
-			2337 = {add_core = AND}
-			2366 = {add_core = AND}
-			2367 = {add_core = AND}
-			CUB = {all_core={add_core = AND}}
-			PRI = {all_core={add_core = AND}}
+			MEX = {all_core = {add_core = PAT}}
+			2190 = {add_core = PAT}
+			2131 = {add_core = PAT}
+			2549 = {add_core = PAT}
+			2532 = {add_core = PAT}
+			2242 = {add_core = PAT}
+			2401 = {add_core = PAT}
+			2338 = {add_core = PAT}
+			2337 = {add_core = PAT}
+			2366 = {add_core = PAT}
+			2367 = {add_core = PAT}
+			CUB = {all_core={add_core = PAT}}
+			PRI = {all_core={add_core = PAT}}
 			add_accepted_culture = guarani
 		}
 	}
