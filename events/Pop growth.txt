@@ -1,0 +1,198 @@
+country_event = { 
+       id = 6002 
+       title = "EVTNAME6002" 
+       desc = "EVTDESC6002" 
+       picture = "Nile"
+	   trigger = {
+	       OR = {
+		       tag = KON
+			   tag = LOA
+		   }
+		   NOT = {
+		       has_country_flag = populationafricangrowth
+			   year = 1837
+		   }
+	   }
+    immediate = {
+		set_country_flag = populationafricangrowth
+    }
+
+option = {
+     name = "EVTOPTA6002"
+     any_pop = {
+            reduce_pop = 14
+     }
+	 set_country_flag = populationafricangrowth
+}}
+country_event = { 
+       id = 6003 
+       title = "EVTNAME6003" 
+       desc = "EVTDESC6003" 
+       picture = "Nile"
+	   trigger = {
+	       NOT = {
+		       tag = KON
+		       tag = LOA
+		       tag = MAJ
+		       tag = TUN
+		       tag = SOK
+		       tag = ALD
+		       tag = MOR
+		       tag = ETH
+			   year = 1838
+			   has_global_flag = populationafricangrowth
+			   year = 1837
+		   }
+		   OR={capital_scope = { continent = africa } tag = DEN tag=PER}
+	   }
+	   
+	mean_time_to_happen = {
+		days = 1
+	}
+    immediate = {
+		set_global_flag = populationafricangrowth
+    }
+
+option = {
+     name = "EVTOPTA6003"
+     any_pop = {
+            reduce_pop = 2
+     }
+	 
+	 set_country_flag = populationafricangrowth
+}}
+country_event = { 
+       id = 6004
+       title = "EVTNAME6004" 
+       desc = "EVTDESC6004" 
+       picture = "Nile"
+	   trigger = {
+	       NOT = {
+		       tag = BRZ
+		       tag = MEX
+			   tag = CHL
+			   tag = RPB
+			   has_country_flag = populationamericangrowth
+			   year = 1838
+		   }
+		   OR = {
+		       capital_scope = { continent = south_america }
+			   AND = {
+			       capital_scope = { continent = north_america }
+				   NOT = {tag = USA}
+			   }
+		   }
+	   }
+	   
+	mean_time_to_happen = {
+		days = 1
+	}
+    immediate = {
+		set_country_flag = populationamericangrowth
+    }
+
+option = {
+     name = "EVTOPTA6004"
+     any_pop = {
+            reduce_pop = 1.5
+     }
+	 
+	 set_country_flag = populationamericangrowth
+}}
+country_event = { 
+       id = 6005 
+       title = "EVTNAME6005" 
+       desc = "EVTDESC6005" 
+       picture = "Nile"
+	   trigger = {
+	       OR = {
+		       tag = BRZ
+		       tag = MEX
+		   }
+		   NOT = {
+			   has_country_flag = populationamericangrowth
+			   year = 1838
+		   }
+	   }
+	   
+	mean_time_to_happen = {
+		days = 1
+	}
+    immediate = {
+		set_country_flag = populationamericangrowth
+    }
+
+option = {
+     name = "EVTOPTA6005"
+     any_pop = {
+         reduce_pop = 1.1
+     }
+	 
+	 set_country_flag = populationamericangrowth
+}}
+country_event = { 
+       id = 6006 
+       title = "EVTNAME6006" 
+       desc = "EVTDESC6006" 
+       picture = "Nile"
+	   trigger = {
+	       OR = {
+		       tag = SWE
+		       tag = FIN
+		       tag = CHL
+		       tag = SER
+		       tag = MOL
+		       tag = WAL
+		   }
+		   NOT = {
+			   has_country_flag = populationamericangrowth
+			   year = 1838
+		   }
+	   }
+    immediate = {
+		set_country_flag = populationamericangrowth
+    }
+	   
+	mean_time_to_happen = {
+		days = 1
+	}
+
+option = {
+     name = "EVTOPTA6006"
+     any_pop = {
+         reduce_pop = 2
+     }
+	 
+	 set_country_flag = populationamericangrowth
+}}
+country_event = { 
+       id = 6007 
+       title = "EVTNAME6006" 
+       desc = "EVTDESC6006" 
+       picture = "Nile"
+	   trigger = {
+		       tag = MGL
+		   NOT = {
+			   has_country_flag = populationmglgrowth
+			   year = 1838
+		   }
+		   all_core = {
+		       owned_by = THIS
+		   }
+	   }
+    immediate = {
+		set_country_flag = populationmglgrowth
+    }
+	   
+	mean_time_to_happen = {
+		days = 1
+	}
+
+option = {
+     name = "EVTOPTA6006"
+     any_pop = {
+         reduce_pop = 5
+     }
+	 
+	 set_country_flag = populationmglgrowth
+}}
